@@ -42,6 +42,8 @@
             <li><a href="{{ route('users.add')}}"><i class="ti-more"></i>Add User</a></li>
           </ul>
         </li> 
+
+       
 		  
         <li class="treeview {{ ($prefix == '/profile') ? 'active':'' }}">
           <a href="#">
@@ -56,7 +58,26 @@
           </ul>
         </li>
 		
- 	  
+        <li class="treeview {{ ($prefix == '/setups') ? 'active':'' }}">
+          <a href="#">
+            <i class="fa  fa-users"></i>
+            <span>Setup Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('student.class.view') }}"><i class="ti-more"></i>Student Class</a></li>
+            <li><a href="{{ route('student.year.view') }}"><i class="ti-more"></i>Student Year</a></li>
+            <li><a href="{{ route('student.group.view') }}"><i class="ti-more"></i>Student Group</a></li>
+            <li><a href="{{ route('student.shift.view') }}"><i class="ti-more"></i>Student Shift</a></li>
+            <li><a href="{{ route('fee.category.view') }}"><i class="ti-more"></i>Fee Category</a></li>
+            <li><a href="{{ route('fee.amount.view') }}"><i class="ti-more"></i>Fee Category Amount</a></li>
+            <li><a href="{{ route('exam.type.view') }}"><i class="ti-more"></i>Exam Type</a></li>
+            <li><a href="{{ route('school.subject.view') }}"><i class="ti-more"></i>School Subject</a></li>
+            <li><a href="{{ route('assign.subject.view') }}"><i class="ti-more"></i>Assign Subject</a></li>
+          </ul>
+        </li> 
 		 
         <li class="header nav-small-cap">User Interface</li>
 		  
